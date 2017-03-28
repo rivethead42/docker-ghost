@@ -1,0 +1,9 @@
+---
+:backends:
+  - json
+:hierarchy:
+  - common
+
+:json:
+  :datadir: /etc/puppet/hieradata
+ 
