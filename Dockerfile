@@ -1,6 +1,6 @@
 # This Dockerfile is used to build a ghost blog image for linuxacademy.com.
 
-FROM rivethead42:ubuntu-base
+FROM rivethead42/ubuntu-base
 
 MAINTAINER Travis N. Thomsen <travis.@linuxacademy.com>
 
