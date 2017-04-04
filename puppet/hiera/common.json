@@ -9,7 +9,9 @@
   "profile::ghost::ghost_group": "ghost",
   "profile::ghost::ghost_user": "ghost",
   "profile::ghost::packages": [
-
-  ],
-
+    "gcc",
+    "make",
+    "python",
+    "unzip"
+  ]
 }

@@ -11,7 +11,7 @@ COPY puppet/Puppetfile /etc/puppetlabs/puppet/
 COPY puppet/hiera/common.json /etc/puppetlabs/code/hieradata/
 
 # Run r10k
-RUN PUPPETFILE=/etc/puppet/Puppetfile PUPPETFILE_DIR=/etc/puppet/modules/ r10k puppetfile install --verbose debug2 --color
+RUN PUPPETFILE=/etc/puppetlabs/puppet/Puppetfile PUPPETFILE_DIR=/etc/puppetlabs/code/modules/ r10k puppetfile install --verbose debug2 --color
 
 # Run Puppet apply
 #RUN /opt/puppetlabs/bin/puppet apply /etc/puppetlabs/puppet/manifests/site.pp --modulepath=/etc/puppetlabs/code/modules/ --hiera_config /etc/puppetlabs/puppet/hiera.yaml --verbose
