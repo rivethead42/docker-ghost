@@ -3,7 +3,7 @@
 FROM rivethead42/ubuntu-base
 
 MAINTAINER Travis N. Thomsen <travis.@linuxacademy.com>
-
+RUN apt-get install lsb-release -y
 # Add Puppetfile
 COPY puppet/Puppetfile /etc/puppetlabs/puppet/
 
