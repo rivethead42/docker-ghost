@@ -3,7 +3,7 @@
     "profile::ghost"
   ],
   "profile::ghost::nodejs_version": "5.x",
-  "profile::ghost::ghost_version": "1.7",
+  "profile::ghost::ghost_version": "0.11.7",
   "profile::ghost::ghost_source_dir": "/usr/src/ghost",
   "profile::ghost::ghost_content_dir": "/var/lib/ghost",
   "profile::ghost::ghost_group": "ghost",
