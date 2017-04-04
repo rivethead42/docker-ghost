@@ -12,6 +12,7 @@
     "gcc",
     "make",
     "python",
-    "unzip"
+    "unzip",
+    "lsb-release"
   ]
 }
