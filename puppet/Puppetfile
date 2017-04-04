@@ -1,6 +1,7 @@
-mod 'puppet-nodejs', '2.3.0'
+mod 'puppetlabs-apt', '2.3.0'
 mod 'puppetlabs-ntp', '6.0.0'
 mod 'puppetlabs-stdlib', '4.16.0'
+mod 'puppet-nodejs', '2.3.0'
 mod 'maestrodev-wget', '1.7.3'
 
 mod "ghost",
