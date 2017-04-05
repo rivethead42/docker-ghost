@@ -18,7 +18,7 @@ RUN PUPPETFILE=/etc/puppet/Puppetfile PUPPETFILE_DIR=/etc/puppet/modules/ r10k p
 
 # Run Puppet apply
 #RUN /opt/puppetlabs/bin/puppet apply /etc/puppet/manifests/site.pp --modulepath=/etc/puppet/modules/ --hiera_config /etc/puppet/hiera.yaml --verbose
-RUN puppet apply /etc/puppet/manifests/site.pp --modulepath=/etc/puppet/modules/ --hiera_config /etc/puppet/hiera.yaml --verbose
+#RUN puppet apply /etc/puppet/manifests/site.pp --modulepath=/etc/puppet/modules/ --hiera_config /etc/puppet/hiera.yaml --verbose
 
 #EXPOSE 2368
 #CMD ["npm", "start"]
