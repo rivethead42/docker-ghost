@@ -3,8 +3,12 @@ mod 'puppetlabs-ntp', '6.0.0'
 mod 'puppetlabs-stdlib', '4.16.0'
 mod 'puppet-nodejs', '2.3.0'
 mod 'maestrodev-wget', '1.7.3'
-mod 'puppet-ghost', '1.1.0'
+#mod 'puppet-ghost', '1.1.0'
 mod 'proletaryo-supervisor', '0.5.3'
+
+mod "ghost",
+  :git => "https://github.com/rivethead42/puppet-ghost.git",
+  :ref => "master"
 
 mod "gosu",
   :git => "https://github.com/rivethead42/puppet-gosu.git",
