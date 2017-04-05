@@ -4,8 +4,8 @@ FROM rivethead42/ubuntu-base
 
 MAINTAINER Travis N. Thomsen <travis.@linuxacademy.com>
 
-ENV GHOST_CONTENT /var/lib/ghost
-ENV GHOST_CONTENT /var/lib/ghost
+ENV GHOST_SOURCE /home/ghost/ghost
+ENV GHOST_CONTENT /home/ghost/ghost
 
 RUN apt-get install lsb-release -y
 # Add Puppetfile
@@ -26,7 +26,7 @@ RUN puppet apply /etc/puppet/manifests/site.pp --modulepath=/etc/puppet/modules/
 COPY docker-entrypoint.sh /entrypoint.sh
 ENTRYPOINT ["/entrypoint.sh"]
 
-VOLUME /var/lib/ghost
+VOLUME $GHOST_CONTENT
 
 EXPOSE 2368
 CMD ["npm", "start"]
