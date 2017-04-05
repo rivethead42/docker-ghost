@@ -4,8 +4,8 @@ FROM rivethead42/ubuntu-base
 
 MAINTAINER Travis N. Thomsen <travis.@linuxacademy.com>
 
-ENV GHOST_SOURCE /home/ghost/ghost
-ENV GHOST_CONTENT /home/ghost/ghost
+ENV GHOST_SOURCE /var/lib/ghost
+ENV GHOST_CONTENT /var/lib/ghost
 
 RUN apt-get install lsb-release -y
 # Add Puppetfile
